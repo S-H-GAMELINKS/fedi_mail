@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero is-link">
+      <div class="hero-body">
+        <p class="title">
+          FediMail
+        </p>
+        <p class="subtitle">
+          FediMailはボトルメールのようにどこかのだれかにメッセージをおくれるサービスです
+        </p>
+      </div>
+    </section>
+
+    <form action="confirm" method="POST" class="mt-4">
+      <% if flash[:notice] %>
+        <div class="notification is-success">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <label class="label">メッセージ</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="送りたいメッセージを書いてください" name="content"></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">メッセージを送る</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

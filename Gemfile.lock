@@ -1,0 +1,68 @@
+GIT
+  remote: https://github.com/S-H-GAMELINKS/mastodon-api.git
+  revision: 3502cdf3756d92d2c72b43b031340fad1c53eafc
+  branch: support/after_2.7_3.1_ruby
+  specs:
+    mastodon-api (2.0.0)
+      addressable (~> 2.6)
+      buftok (~> 0)
+      http (~> 4.0)
+      oj (~> 3.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
+    buftok (0.3.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    ffi (1.15.5)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
+    http (4.4.1)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    http-parser (1.2.3)
+      ffi-compiler (>= 1.0, < 2.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
+    oj (3.13.23)
+    public_suffix (5.0.1)
+    puma (6.0.1)
+      nio4r (~> 2.0)
+    rack (2.2.5)
+    rack-protection (3.0.5)
+      rack
+    rake (13.0.6)
+    ruby2_keywords (0.0.5)
+    sinatra (3.0.5)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.5)
+      tilt (~> 2.0)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
+    tilt (2.0.11)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8.2)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  mastodon-api!
+  puma
+  sinatra
+  sinatra-flash
+
+BUNDLED WITH
+   2.4.1
