@@ -13,6 +13,7 @@ def trim_content(content)
     content.gsub(/<p>|<\/p>|<span>|<\/span>|<span class="h-card"><a href="#{ENV['MASTODON_URL']}\/@fedi_mail" class="u-url mention" rel="nofollow noopener noreferrer" target="_blank">|<span class="h-card"><a href="#{ENV['MASTODON_URL']}\/@fedi_mail" class="u-url mention">/, '')
         .sub(/@fedi_mail<\/a>/, '')
         .gsub(/<br \/>/, '')
+        .gsub(/<br>/, '')
 end
 
 # BotのID
